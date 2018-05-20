@@ -18,11 +18,18 @@ var data=[{
     password:'1234'
 }
 ];
-localStorage.setItem('data',JSON.stringify(data));
+
 function sign_in (){
-   var local_data= localStorage.getItem('data');
-   var info=document.getElementById('info');
-    var data_update=JSON.parse(local_data);
+    var info=document.getElementById('info');
+
+    var local_data= localStorage.getItem('data');
+    var data_update=JSON.parse(local_data);    
+    if (data_update){
+        data_update;
+    }
+    else {
+        data_update=data;
+    }
     var log = document.getElementById('login').value;
     var pass = document.getElementById('password').value;
 for (var i=0;i<data_update.length;i++){
@@ -60,7 +67,15 @@ break;
 else{
 newUser.password=document.getElementById('password').value;
 var parse_data=localStorage.getItem('data');
+
 var massive_data=JSON.parse(parse_data);
+  
+    if (massive_data){
+        massive_data;
+    }
+    else {
+        massive_data=data;
+    }
 console.log('massive_data',massive_data);
 console.log ('parse_data=',parse_data);
 console.log('newUser',newUser);
