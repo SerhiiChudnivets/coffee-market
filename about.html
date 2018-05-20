@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Casual - Start Bootstrap Theme</title>
+    <title>Coffee Spalah</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,12 +25,14 @@
   <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span>
-      <span class="site-heading-lower">Business Casual</span>
+      <span class="site-heading-upper text-primary mb-3">History of coffee</span>
+      <span class="site-heading-lower">Cozy cafe</span>
     </h1>
     <div class="row">
-      <div class="col-xl-12 text-center">
-       <p id="logout-text" class="h5 text-light"></p>
+      <div class="col-xl-12 d-flex justify-content-end">
+       <p id="logout-text" class="h5 text-light mr-3"></p>
+       
+     
        <input type="button" id="logout" class="btn btn-dark" onclick="logout()" value="Logout">
       </div>
     </div>
@@ -44,13 +46,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+              <a class="nav-link text-uppercase text-expanded" href="about.html">Order</a>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Shopping history</a>
             </li>
           </ul>
         </div>
@@ -66,7 +68,7 @@
               <div class="bg-faded rounded p-5">
                 <h2 class="section-heading mb-4">
                   <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                  <span class="section-heading-lower">About Our Cafe</span>
+                  <span class="section-heading-lower">Your order</span>
                 </h2>
                 
                 </div>
@@ -81,7 +83,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-2 col-xs-2 mx-auto d-flex text-center justify-content-center">
               <label><img src="img/am.png"><input type="radio" id="americano" name="coffee" class="coffee" onclick="price()"><br> Americano </label>
                <label> <img src="img/ES.png"> <input type="radio" id="espresso" name="coffee" class="coffee" onclick="price()"><br> Espresso </label>
-               <label><img src="img/la.png"> <input type="radio" id="latte" name="coffee" class="coffee" onclick="price()"><br> Latte    </label>
+               <label><img src="img/LA.png"> <input type="radio" id="latte" name="coffee" class="coffee" onclick="price()"><br> Latte    </label>
                <label> <img src="img/capp.png"><input type="radio" id="cappuccino" name="coffee" class="coffee" onclick="price()"><br>Cappuccino</label>  
               </div>   
               </div> 

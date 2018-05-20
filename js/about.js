@@ -9,7 +9,7 @@ var username=localStorage.getItem('activeUser');
 username=JSON.parse(username);
 console.log(username);
 var logout_text=document.getElementById('logout-text');
-logout_text.innerHTML='Добро пожаловать на сайт, '+username.name;
+logout_text.innerHTML='Welcome to the site, '+username.name;
 }
 else {
     window.location='index.html';
